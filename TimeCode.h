@@ -1,10 +1,6 @@
 #ifndef TIMECODE_H
 #define TIMECODE_H
 
-#include <iostream> // use for the throw "Negative Condition" lines
-// I don't think I use <iostream> instead I use <stdexcept> for the throw lines
-// Should I keep it?
-
 #include <stdexcept> // I put in this file because so that any file including this header can catch invalid_argument
 #include <string>
 

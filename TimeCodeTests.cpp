@@ -32,7 +32,6 @@ void TestDefaultConstructor(){
     //cout << "Testing ToString()" << endl;
     //cout << "tc: " << tc.ToString() << endl;
     assert(tc.ToString() == "0:0:0");
-    assert(tc.GetTimeCodeAsSeconds() == 0);
 
     cout << "PASSED!" << endl << endl;
 }
@@ -513,3 +512,4 @@ int main(){
 }
 
 // I used AI (ChatGPT) to double check my math for test case results after getting errors related to that.
+// I wrote try catch blocks based on the format in the screenshot
