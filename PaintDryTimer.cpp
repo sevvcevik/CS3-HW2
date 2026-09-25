@@ -178,7 +178,6 @@ int main(){
 				if (remaining <= 0) {
 					delete it->timeToDry; 
 					it = tracker.erase(it);
-					// the moment a batch finishes
 				} 
 				else {
 					++it;
@@ -195,8 +194,7 @@ int main(){
 	for (DryingSnapShot& dss : tracker) {
 		delete dss.timeToDry;
 	}
-	// the while loop ends when user chooses 'q', for any batches still active
-	// guarantee every TimeCode* created by new gets freed
+	// the while loop ends when user chooses 'q', for any batches still active this is needed to guarantee every TimeCode* created by new gets freed
 
 	return 0;
 }
